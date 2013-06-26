@@ -21,7 +21,7 @@ set nobackup
 set expandtab     " Use space instead of tab
 set tabstop=4     " 1 tab == 4 spaces
 set shiftwidth=4
-set smarttab
+set cindent
 set ai            " Auto indent
 set si            " Smart indent
 set wrap          " Wrap lines
