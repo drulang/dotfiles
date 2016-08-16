@@ -1,13 +1,19 @@
+#!/usr/bin/bash
+
 PATH=$PATH:/Users/dru/Documents/code/fly/server/cmd
 export FLY_VENV=/Users/dru/Documents/code/fly/venv
 export FLY_APP_DIR=/Users/dru/Documents/code/fly/server
 
+export CODE_DIR=$HOME/Documents/code
 export WORK_DIR=$HOME/Documents/workcode
 
 export SWITCH_DIR=$WORK_DIR
 export SWITCH_IOS_DIR=$SWITCH_DIR/ios
 
+#Setup commands
 PATH=$PATH:$SWITCH_IOS_DIR/cmd
+PATH=$PATH:$CODE_DIR/dotfiles/bin
+
 
 alias up='ping 8.8.8.8'
 alias gc='git commit'
@@ -20,3 +26,4 @@ alias gk='git checkout'
 alias gl='git log'
 alias ska='echo "Killing core audio"; sudo killall coreaudiod;'
 alias bump="git commit -a -m \"Bump build no\""
+
