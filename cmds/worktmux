@@ -1,0 +1,30 @@
+#!/bin/bash
+SESSION=work
+
+tmux attach -t $SESSION
+
+if [ $? -ne 1 ]; then
+    exit
+fi
+
+cd $WORK_DIR
+
+tmux -2 new-session -d -s $SESSION
+
+#1
+tmux rename-window "ios"
+tmux send-keys "cd ios" C-m
+
+#2
+tmux new-window
+
+#3
+tmux new-window
+
+#4
+tmux new-window
+
+tmux select-window -t 0
+
+tmux attach
+
