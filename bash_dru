@@ -32,4 +32,4 @@ alias gl='git log'
 alias ska='echo "Killing core audio"; sudo killall coreaudiod;'
 alias bump="git commit -a -m \"Bump build no\""
 alias clear-derived-data='rm -rf ~/Library/Developer/Xcode/DerivedData'
-alias grepr='grep -Rni'
+alias grepr='grep -RniI'
