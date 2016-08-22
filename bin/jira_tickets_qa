@@ -1,0 +1,7 @@
+
+curl -sS -u $JIRA_EMAIL:$JIRA_PASSWORD\
+         -X POST\
+         -H "Content-Type: application/json"\
+         --data '{"jql":"project=IOS AND assignee=dru AND status=\"Deployed\"","fields":["summary"]}' "https://switchapp.atlassian.net/rest/api/2/search" \
+     | python -m json.tool \
+     | grep 'summary\|key'
