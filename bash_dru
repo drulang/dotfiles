@@ -1,6 +1,8 @@
 #!/usr/bin/bash
 
-source ~/git-completion.bash
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
 
 export TERM=xterm-256color
 
