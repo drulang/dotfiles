@@ -8,17 +8,8 @@ export TERM=xterm-256color
 
 # Directories
 export CODE_DIR=$HOME/Documents/code
-export WORK_DIR=$HOME/Documents/workcode
-
-export SWITCH_DIR=$WORK_DIR
-export SWITCH_IOS_DIR=$SWITCH_DIR/ios
-
-export FLY_VENV=$CODE_DIR/fly/venv
-export FLY_APP_DIR=$CODE_DIR/fly/server
 
 # Commands
-PATH=$PATH:$CODE_DIR/fly/server/bin
-PATH=$PATH:$SWITCH_IOS_DIR/bin
 PATH=$PATH:$CODE_DIR/dotfiles/bin
 
 #Alias
