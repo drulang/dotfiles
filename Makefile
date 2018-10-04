@@ -5,7 +5,7 @@ install:
 	cp -f tmux.conf ~/.tmux.conf &&\
 		cp -f vimrc ~/.vimrc &&\
 		vim +PluginInstall +qall &&\
-		ln -s bash_dru ~/.bash_dru &&\
+		ln -s ${PWD}/bash_dru ~/.bash_dru &&\
 		echo "Insert this in .bash_profile: [[ -s ~/.bash_dru ]] && source ~/.bash_dru"
 
 
