@@ -28,6 +28,7 @@ alias clear-derived-data='rm -rf ~/Library/Developer/Xcode/DerivedData'
 alias grepr='grep -RniI'
 alias record='rm ~/Downloads/appvideo.mov || xcrun simctl io booted recordVideo ~/Downloads/appvideo.mov'
 alias opendl='xcrun simctl openurl booted'
+alias pi='bundle exec pod install'
 
 function jca () {
     re='^[0-9]+$'
@@ -42,3 +43,14 @@ function jca () {
     fi
 }
 
+function t() {
+    open https://jira.tamg.io/browse/TRIP-$1
+}
+
+export IKEONO_ENV='LOCAL'
+
+KUBE_CONFIG="ikeono.yaml"
+alias k="kubectl --kubeconfig=/Users/$(whoami)/.kube/$KUBE_CONFIG"
+alias kg="kubectl --kubeconfig="/Users/$(whoami)/.kube/$KUBE_CONFIG" get"
+alias mk='kubectl'
+alias helm="helm --kubeconfig /Users/$(whoami)/.kube/$KUBE_CONFIG"
